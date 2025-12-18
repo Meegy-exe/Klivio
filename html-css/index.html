@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'accueil du site Klivio">
+    <title>Klivio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/d1565d1358.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="responsive">
+                <!-- LOGO ET TITRE -->
+                <div class="navGauche">
+                    <a href="#"><img src="./images/logo.png" alt="Logo Klivio" id="logo-nav" title="Logo Klivio"></a>
+                    <a href="#" id="titre-formation">Les formations</a>
+                    <!-- icone burger -->
+                    <img id="icon-burger" src="./images/icon-burger.svg" alt="Icone menu burger">
+                </div>
+                <!-- BARRE RECHERCHE -->
+                <div class="navMilieu">
+                    <form id="barre-recherche">
+                        <input type="search" name="search" placeholder="Rechercher" id="search" title="Barre de recherche"/>
+                        <i class="fa-solid fa-magnifying-glass" title="Icone de loupe"></i>
+                    </form>
+                </div>
+                <!-- BOUTON A DROITE -->
+                <div class="navDroite">
+                    <a href="#" id="connexion" class="btnNav" title="Bouton connexion">Connexion</a>
+                    <a href="#" id="inscription" class="btnNav">Inscription</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Partie du haut avec H1 -->
+        <section class="banniere">
+            <div class="responsive banniere-content">
+                <h1>Klivio, l’allié de votre progression</h1>
+                <h2>Les meilleures formations sur le développement personnel</h2>
+                <a href="#" id="savoir-plus" class="btnNav" title="Bouton en savoir plus">En savoir plus</a>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- FORMATIONS POPULAIRES-->
+        <section class="section-pop">
+            <div class="responsive">
+                <h2 class="titre-pop">Les formations populaires</h2>
+                <div class="card-form">
+
+                    <!-- 1 FORMA -->
+                    <article class="card">
+                        <div class="green-part" title="Image carré vert"></div>
+                        <div class="price">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <!-- <div class="little-price">60 €</div> -->
+                        <div class="card1content">
+                            <h3 class="cardH3">Parler en public</h3>
+                            <p class="nom1">Sonia Lefèvre | Coach prise de parole</p>
+                            <div class="blocStar" title="Icone étoile">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                            </div>
+                            <p class="accroche-card">Gagnez en aisance et captez votre auditoire</p>
+                        </div>
+                    </article>
+                    <!-- 2 FORMA -->
+                    <article class="card">
+                        <div class="green-part" title="Image carré vert"></div>
+                        <div class="price">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <!-- <div class="little-price">60 €</div> -->
+                        <div class="card1content">
+                            <h3 class="cardH3">Gérer le stress</h3>
+                            <p class="nom1">Lucie Garnier | Formatrice</p>
+                            <div class="blocStar" title="Icone étoile">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="no-star fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="accroche-card">Apprenez à rester serein face aux défis</p>
+                        </div>
+                    </article>
+                    <!-- 3 FORMA -->
+                    <article class="card">
+                        <div class="green-part" title="Image carré vert"></div>
+                        <div class="price">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <!-- <div class="little-price">60 €</div> -->
+                        <div class="card1content">
+                            <h3 class="cardH3">Travailler en équipe</h3>
+                            <p class="nom1">David Moreau | Expert</p>
+                            <div class="blocStar" title="Icone étoile">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                            </div>
+                            <p class="accroche-card">Collaborez efficacement, même à distance</p>
+                        </div>
+                    </article>
+                    <!-- 4 FORMA -->
+                    <article class="card">
+                        <div class="green-part" title="Image carré vert"></div>
+                        <div class="price">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <!-- <div class="little-price">60 €</div> -->
+                        <div class="card1content">
+                            <h3 class="cardH3">Gérer son temps</h3>
+                            <p class="nom1">Claire Dumas | Coach organisation</p>
+                            <div class="blocStar" title="Icone étoile">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="no-star fa-solid fa-star"></i>
+
+                            </div>
+
+                            <p class="accroche-card">Optimisez vos journées et gagnez en efficacité</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="btnVoirContent"><a class="btnVoir" href="#">Voir plus de formations</a></div>
+            </div>
+        </section>
+        <!-- FORMUTION RECENTES -->
+        <section class="section-rec">
+            <div class="responsive">
+                <h2 class="titre-rec">Les formations récentes</h2>
+                <div class="card-form">
+
+                    <!-- 1ere formation -->
+                    <article class="blue-card">
+                        <div class="green-part"></div>
+                        <div class="price2">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <div class="card1content" title="Icone étoile">
+                            <h3 class="cardH3R">Mieux communiquer</h3>
+                            <p class="nom2">Julien Martel | Coach en comm.</p>
+                            <div class="blocStar">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                            </div>
+                            <p class="accroche-card2">Améliorez vos échanges et votre impact relationnel</p>
+                        </div>
+                    </article>
+                    <!-- 2ème formation -->
+                    <article class="blue-card">
+                        <div class="green-part"></div>
+                        <div class="price2">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <div class="card1content" title="Icone étoile">
+                            <h3 class="cardH3R">Maîtriser ses émotions</h3>
+                            <p class="nom2">Amel Benali | Psy. du travail</p>
+                            <div class="blocStar">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                            </div>
+                            <p class="accroche-card2">Développez calme et intelligence émotionnelle</p>
+                        </div>
+                    </article>
+                    <!-- 3ème formation -->
+                    <article class="blue-card">
+                        <div class="green-part"></div>
+                        <div class="price2">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <div class="card1content">
+                            <h3 class="cardH3R">Résoudre les problèmes</h3>
+                            <p class="nom2">Thomas Rivière | Expert</p>
+                            <div class="blocStar" title="Icone étoile">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="no-star fa-solid fa-star"></i>
+                            </div>
+                            <p class="accroche-card2">Analysez, décidez et trouvez des solutions durables</p>
+                        </div>
+                    </article>
+                    <!-- 4ème formation -->
+                    <article class="blue-card">
+                        <div class="green-part"></div>
+                        <div class="price2">
+                            <span class="little-price" title="15,99 €">15,99 €</span>
+                            <span class="big-price" title="60 € barré">60 €</span>
+                        </div>
+                        <div class="card1content">
+                            <h3 class="cardH3R">Leadership positif</h3>
+                            <p class="nom2">Marc Nguyen | Consultant</p>
+                            <div class="blocStar" title="Icone étoile">
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="star fa-solid fa-star"></i>
+                                <i class="no-star fa-solid fa-star"></i>
+                            </div>
+                            <p class="accroche-card2">Inspirez, motivez et fédérez votre équipe</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="btnVoirContent">
+                    <a class="btnVoir2" href="#">Voir plus de formations</a>
+                </div>
+            </div>
+        </section>
+        <!-- AVIS CLIENTS -->
+        <section class="section-avis">
+            <div class="responsive">
+                <h2 class="titre-avis" title="Avis clients">Avis clients</h2>
+                <div class="contentAVIS">
+                    <!-- avis 1 -->
+                    <article class="cardAVIS">
+                        <img class="imgAVIS" src="./images/juliette.png" alt="Photo de Juliette">
+                        <h3 class="nom3">Juliette</h3>
+                        <div class="starAVIS" title="Icone étoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="textAv1">J’ai trouvé le parcours très bien structuré : vidéos courtes, quizzes
+                            pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions.
+                            L’interface est claire et la progression est motivante — parfait pour se former en
+                            autonomie.</p>
+                    </article>
+                    <!-- avis 2 -->
+                    <article class="cardAVIS">
+                        <img class="imgAVIS" src="./images/camille.png" alt="Photo de Camille">
+                        <h3 class="nom3">Camille</h3>
+                        <div class="starAVIS" title="Icone étoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="textAv1">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le
+                            support et les
+                            corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Les avantages klivio -->
+        <section class="section-avantage">
+            <div class="responsive">
+                <div class="avantageContent">
+                    <h2 class="titre-avantage" title="Les avantages Klivio">Les avantages Klivio</h2>
+                    <ul class="ul-avantage">
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-arrow-up-right.svg"
+                                alt="Icone de flèche qui pointe en haut à droite" title="Icone flèche">
+                            Suivi de sa progression
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-edit.svg" alt="Icone d'un stylo qui écrit" title="Icone stylo">
+                            Exercices et QCM pour la mise en pratique
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-download.svg" alt="Icone de téléchargement" title="Icone téléchargement">
+                            Possibilité de télécharger/imprimer les formations
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-star.svg" alt="Icone d'étoile" title="Icone d'étoile">
+                            Contenu qualitatif et vérifié
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-clock-backward.svg" alt="Icone d'horloge" title="Icone d'horloge">
+                            Suivi en autonomie, 24h/24, 7j/7
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-annotation-typing.svg" alt="Icone de tchat" title="Icone de tchat">
+                            Espaces d'échanges dédiés pour poser ses questions sur les formations
+                        </li>
+                    </ul>
+                </div>
+                <img class="img-avantage" src="./images/avantages.png"
+                    alt="Photo d'une femme derrière son pc qui sourit" title="Photo section avantage">
+            </div>
+        </section>
+        <!-- Créer vos formations avec Klivio -->
+        <section class="section-vosForm">
+            <div class="responsive">
+                    <img id="imgBureau" src="./images/become-author.png"
+                        alt="Vue du dessus d'un bureau, on voit une personne écrire sur un cahier" title="Photo section créer vos formations">
+                <div class="vosFormContent">
+                    <h2 id="titre-vos-form">Créez vos formations avec Klivio</h2>
+                    <ul class="li-vos-form">
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-coin-hand.svg"
+                                alt="Icone de main qui tient de la monnaie" title="Icone de main avec pièce">
+                            Commission unique, au pourcentage sur les ventes
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-heart.svg" alt="Icone de coeur" title="Icone de coeur">
+                            Mise en avant sur la plateforme
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-pencil.svg" alt="Icone de stylo" title="Icone de crayon">
+                            Contrôle total sur le cours : contenu, prix
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-ecrou.svg" alt="Icone d'écrou" title="Icone d'écrou">
+                            Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices,
+                            vidéos,
+                            téléchargement en PDF, suivi des statistiques des ventes, gestion de codes promos,
+                            gestion
+                            de la facturation, etc
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-user-profile-square.svg" alt="Icone de profil">
+                            Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits
+                            d’auteur
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- A PROPOS DE KLIVIO -->
+        <section class="section-a-propos">
+            <div class="responsive">
+                <div class="aProposContent">
+                    <h2 class="titre-a-propos" title="A propos de Klivio">À propos de Klivio</h2>
+                    <p class="pAPropos">Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre
+                        approche
+                        éducative.
+                        Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu,
+                        reconnaissant la qualité de leur travail.<br>
+                        Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité écessaire
+                        pour
+                        explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une
+                        clarté
+                        totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment
+                        le
+                        socle
+                        d'une ducation enrichissante et équitable, guidant notre mission d'offrir des
+                        pportunités
+                        d'apprentissage de qualité
+                    </p>
+                </div>
+                <div id="blueBlock" title="Image bloc bleu">
+                    <img id="logoAP" src=" ./images/logo.png" alt="Logo Klivio" title="Logo Klivio">
+                </div>
+            </div>
+        </section>
+        <!-- NOUS CONTACTER -->
+        <section class="section-contact">
+            <div class="responsive">
+                <div class="contactContent">
+                    <h2 id="titreContact" title="Nous contacter">Nous contacter</h2>
+                    <div id="barre-séparateur"></div>
+                    <form class="contactForm">
+                        <div id="form">
+                            <input class="contactUs" type="text" id="name" name="name" placeholder="Nom" title="Nom" required>
+                            <input class="contactUs" type="email" id="email" name="email" placeholder="Email" title="Email" required>
+                        </div>
+                        <textarea class="message" id="message" name="message" rows="4" title="Votre message" placeholder="Votre message"
+                            required></textarea>
+                        <input id="btnValider" type="submit" value="Envoyer" title="Bouton envoyer">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div id="bandeVerte"></div>
+        <div class="responsive">
+            <div class="footerContent">
+                <div class="footer">
+                    <div id="blockLogo">
+                        <img id="footerLogo" src="./images/logo.png" alt="Logo Klivio" title="Logo Klivio">
+                    </div>
+                    <div id="mentions">
+                        <h3 class="titreFooter" title="Mentions légales">Mentions légales</h3>
+                        <ul class="ulCopyright">
+                            <li><a href="#" title="CGU">CGU</a></li>
+                            <li><a href="#" title="CGV">CGV</a></li>
+                            <li><a href="#" title="FAQ">FAQ</a></li>
+                            <li><a href="#" title="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div id="coordonnees">
+                        <h3 class="titreFooter" title="Coordonnées">Coordonnées</h3>
+                        <ul class="ulCopyright">
+                            <li>
+                                <img class="iconCoordonnee" src="./images/icon-marker.svg" alt="Icone de localisation" title="Icone localisation">
+                                1 place république,<br>
+                                75003 Paris
+                            </li>
+                            <li>
+                                <img class="iconCoordonnee" src="./images/icon-phone.svg"
+                                    alt="Icone d'un téléphone mobile" title="Icone téléphone">
+                                01.02.03.04.05
+                            </li>
+                            <li>
+                                <img title="Icone email" class="iconCoordonnee" src="./images/icon-mail.svg" alt="Icone d'un email">
+                                contact@klivio.fr
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blockBtn">
+                        <a class="footerBtn btnConnexion" href="#" title="Bouton connexion">Connexion</a>
+                        <a class="footerBtn btnInscription" href="#" title="Bouton d'inscription">Inscription</a>
+                    </div>
+                </div>
+                <div id="barre-separateur-footer"></div>
+                <div class="footerTDR">
+                    <p class="copyright" title="© Klivio - 2025">© Klivio - 2025</p>
+                    <div class="blockFollow">
+                        <p id="followUs" title="Suivez - nous">Suivez - nous</p>
+                        <div class="iconFooter">
+                            <img title="Icone Facebook" class="iconSocial fb" src="./images/icon-fb.svg" alt="Icone Facebook">
+                            <img title="Icone X" class="iconSocial x" src="./images/icon-x.svg" alt="Icone Twitter">
+                            <img title="Icone Instagram" class="iconSocial insta" src="./images/icon-insta.svg" alt="Icone Instagram">
+                            <img title="Icone LinkedIn" class="iconSocial in" src="./images/icon-in.svg" alt="Icone LinkedIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Structuring_content/Structuring_documents -->
+
+</html>

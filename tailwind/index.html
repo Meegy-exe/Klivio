@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'accueil du site Klivio">
+    <title>Klivio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/d1565d1358.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    // on définit les couleurs
+                    colors: {
+                        'black': '#080808',
+                        'red': '#E50914',
+                        'grey': '#121212',
+                    },
+                    fontFamily: {
+                        'stranger': ['Benguiat', 'serif'],
+                    },
+                    boxShadow: {
+                        'red': '0 0 10px rgba(229, 9, 20, 0.6)',
+                        'white': '0 0 20px rgba(255, 255, 255, 0.3)',
+                        'black': '0 10px 20px rgba(0, 0, 0, 0.8)',
+                    },
+                    dropShadow: {
+                        'red': '0 0 10px rgba(229, 9, 20, 0.6)',
+                    }
+
+                }
+            }
+        }
+    </script>
+</head>
+<!-- MEMO -->
+<!-- hidden = caché, md:block = visible pour tablette, lg:hidden = caché à partir de grand ecran -->
+
+<!-- md = mobile lg = pc -->
+
+<!-- archive -->
+<!-- <div
+        class="fixed inset-0 -z-20 bg-cover bg-no-repeat opacity-40 mix-blend-overlay bg-[url('./img/noise-transparent.png')]">
+    </div>
+    <div class="fixed inset-0 -z-10 bg-gradient-to-r from-black via-[#E50914]/40 to-black"></div>
+ -->
+
+<body class="bg-black text-white font-stranger overflow-x-hidden">
+    <header class="w-full fixed top-0 z-50 bg-black border-white border-b backdrop-blur-md">
+        <nav class="flex container justify-between items-center mx-auto px-4 h-20">
+            <!-- <div class="grid grid-flow-row-dense grid-cols-3 grid-rows-3"> -->
+            <div class="flex justify-between container mx-auto px-4 items-center w-full ">
+                <!-- LOGO ET TITRE -->
+                <div class="flex items-center gap-6 md:justify-start justify-between md:w-auto w-full">
+                    <a href="#"><img class="h-12 w-auto object-contain" src="./img/logonav.jpg" alt="Logo Klivio"
+                            id="logo-nav" title="Logo Klivio"></a>
+                    <a href="#" class="hidden md:block font-bold text-white hover:text-red tracking-widest">
+                        Les formations</a>
+                    <!-- icone burger -->
+                    <!-- <i class="fas fa-bars text-2xl text-white md:hidden" title="Icone menu burger"></i> -->
+                    <img class="md:hidden w-8 h-8 " src="./img/icon-burger.svg" alt="Menu">
+                </div>
+                <!-- BARRE RECHERCHE -->
+                <div class="hidden flex-1 max-w-lg mx-8 lg:flex relative">
+                    <form class="w-full relative">
+                        <input type="search" name="search"
+                            class="w-full bg-gray-100 border border-gray-300 text-red py-2 pl-4 pr-10"
+                            placeholder="Rechercher" title="Barre de recherche" />
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400" title="Icone de loupe"></i>
+                    </form>
+                </div>
+                <!-- BOUTON A DROITE -->
+                <div class="flex items-center gap-4">
+                    <a href="#"
+                        class="hidden md:block inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase"
+                        title="Bouton connexion">
+                        Connexion</a>
+                    <a href="#"
+                        class="hidden md:block inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase">
+                        Inscription</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- 85 view height -->
+        <!-- tracking-widest, tracking-[0.2em] c'est l'espacement -->
+
+        <!-- Partie du haut avec H1 -->
+        <section
+            class="flex flex-col justify-center items-center text-center h-[80vh] px-4 overflow-hidden bg-black relative">
+            <img class="opacity-60 w-full h-full object-cover absolute inset-0" src="./img/bg-hero.jpg"
+                alt="Photo de la bannière, enfant en vélo">
+            <div class="flex flex-col items-center relative z-10">
+                <h1
+                    class="md:text-7xl lg:text-8xl text-5xl font-bold text-red uppercase tracking-widest mb-6 drop-shadow-red animate-pulse">
+                    Klivio, l’allié de votre progression</h1>
+
+                <h2
+                    class="mb-6 md:text-3xl drop-shadow-md text-xl font-bold text-white uppercase tracking-[0.2em] drop-shadow-black">
+                    Les meilleures formations sur le développement personnel</h2>
+
+                <a href="#" id="savoir-plus"
+                    class="inline-block px-10 py-4 bg-white text-black font-bold tracking-widest uppercase shadow-white"
+                    title="Bouton en savoir plus">En savoir plus</a>
+            </div>
+
+        </section>
+        <!-- /////////////////////////////////////// -->
+        <!-- FORMATIONS POPULAIRES-->
+        <section class="px-4 py-12">
+            <div class="container mx-auto">
+                <h2
+                    class="drop-shadow-red text-center border-red pl-4 text-3xl font-bold text-white uppercase tracking-widest font-stranger mb-12">
+                    Les formations populaires</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+                    <!-- 1 FORMA -->
+                    <article
+                        class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
+                        <!-- bloc au dessus equivalent vert -->
+                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
+                                class="object-cover w-full h-full" src="./img/micro.jpg" alt="Photo d'un micro"
+                                title="Photo micro"></div>
+                        <div
+                            class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
+                            <span class="font-bold text-white" title="15,99 €">15,99 €</span>
+                            <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
+                        </div>
+
+                        <div class="p-6">
+                            <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Parler en
+                                public</h3>
+                            <p class="italic mb-4 text-gray-400 text-sm">Sonia Lefèvre | Coach prise de parole</p>
+                            <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-sm text-gray-300">Gagnez en aisance et captez votre auditoire</p>
+                        </div>
+                
+                </article>
+
+                <!-- 2 FORMA -->
+                <article
+                    class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
+                    <!-- bloc au dessus equivalent vert -->
+                    <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
+                            class="object-cover w-full h-full" src="./img/cassette.jpg" alt="Photo d'un micro"
+                            title="Photo micro"></div>
+                    <div
+                        class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
+                        <span class="font-bold text-white" title="15,99 €">15,99 €</span>
+                        <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Gérer le stress
+                        </h3>
+                        <p class="italic mb-4 text-gray-400 text-sm">Lucie Garnier | Formatrice</p>
+                        <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="no-star fa-solid fa-star"></i>
+                        </div>
+
+                        <p class="text-sm text-gray-300">Apprenez à rester serein face aux défis</p>
+                    </div>
+                </article>
+                <!-- 3 FORMA -->
+                <article
+                    class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
+                    <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
+                            class="object-cover w-full h-full" src="./img/talkiewalkie.jpg"
+                            alt="Photo d'un talkie walkie" title="Photo micro"></div>
+                    <div
+                        class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
+                        <span class="font-bold text-white" title="15,99 €">15,99 €</span>
+                        <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Travailler en
+                            équipe</h3>
+                        <p class="italic mb-4 text-gray-400 text-sm">David Moreau | Expert</p>
+                        <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sm text-gray-300">Collaborez efficacement, même à distance</p>
+                    </div>
+                </article>
+                <!-- 4 FORMA -->
+                <article
+                    class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
+                    <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
+                            class="object-cover w-full h-full" src="./img/time.jpg" alt="Photo d'un sablier"
+                            title="Photo micro"></div>
+                    <div
+                        class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
+                        <span class="font-bold text-white" title="15,99 €">15,99 €</span>
+                        <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Gérer son temps
+                        </h3>
+                        <p class="italic mb-4 text-gray-400 text-sm">Claire Dumas | Coach organisation</p>
+                        <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <p class="text-sm text-gray-300">Optimisez vos journées et gagnez en efficacité</p>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center"><a
+                    class="inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase "
+                    href="#">Voir plus de formations</a></div>
+            </div>
+        </section>
+        <!-- FORMUTION RECENTES -->
+        <section class="container mx-auto px-4 py-12">
+            <h2
+                class="drop-shadow-red text-center border-red pl-4 text-3xl font-bold text-white uppercase tracking-widest">
+                Les
+                formations récentes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- 1ere formation -->
+                <article class="bg-black overflow-hidden border border-white/10">
+                    <!-- bloc au dessus equivalent vert -->
+                    <div class="h-40 relative" title="Image"></div>
+                    <div class="price2">
+                        <span class="little-price" title="15,99 €">15,99 €</span>
+                        <span class="big-price" title="60 € barré">60 €</span>
+                    </div>
+                    <div class="card1content" title="Icone étoile">
+                        <h3 class="cardH3R">Mieux communiquer</h3>
+                        <p class="nom2">Julien Martel | Coach en comm.</p>
+                        <div class="blocStar">
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                        </div>
+                        <p class="accroche-card2">Améliorez vos échanges et votre impact relationnel</p>
+                    </div>
+                </article>
+                <!-- 2ème formation -->
+                <article class="bg-black overflow-hidden border border-white/10">
+                    <!-- bloc au dessus equivalent vert -->
+                    <div class="h-40 relative" title="Image"></div>
+                    <div class="price2">
+                        <span class="little-price" title="15,99 €">15,99 €</span>
+                        <span class="big-price" title="60 € barré">60 €</span>
+                    </div>
+                    <div class="card1content" title="Icone étoile">
+                        <h3 class="cardH3R">Maîtriser ses émotions</h3>
+                        <p class="nom2">Amel Benali | Psy. du travail</p>
+                        <div class="blocStar">
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                        </div>
+                        <p class="accroche-card2">Développez calme et intelligence émotionnelle</p>
+                    </div>
+                </article>
+                <!-- 3ème formation -->
+                <article class="bg-black overflow-hidden border border-white/10">
+                    <!-- bloc au dessus equivalent vert -->
+                    <div class="h-40 relative" title="Image"></div>
+                    <div class="price2">
+                        <span class="little-price" title="15,99 €">15,99 €</span>
+                        <span class="big-price" title="60 € barré">60 €</span>
+                    </div>
+                    <div class="card1content">
+                        <h3 class="cardH3R">Résoudre les problèmes</h3>
+                        <p class="nom2">Thomas Rivière | Expert</p>
+                        <div class="blocStar" title="Icone étoile">
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="no-star fa-solid fa-star"></i>
+                        </div>
+                        <p class="accroche-card2">Analysez, décidez et trouvez des solutions durables</p>
+                    </div>
+                </article>
+                <!-- 4ème formation -->
+                <article class="bg-black overflow-hidden border border-white/10">
+                    <!-- bloc au dessus equivalent vert -->
+                    <div class="h-40 relative" title="Image"></div>
+                    <div class="price2">
+                        <span class="little-price" title="15,99 €">15,99 €</span>
+                        <span class="big-price" title="60 € barré">60 €</span>
+                    </div>
+                    <div class="card1content">
+                        <h3 class="cardH3R">Leadership positif</h3>
+                        <p class="nom2">Marc Nguyen | Consultant</p>
+                        <div class="blocStar" title="Icone étoile">
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="star fa-solid fa-star"></i>
+                            <i class="no-star fa-solid fa-star"></i>
+                        </div>
+                        <p class="accroche-card2">Inspirez, motivez et fédérez votre équipe</p>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center">
+                <a class="inline-block px-10 py-4 bg-white text-black font-bold tracking-widest uppercase "
+                    href="#">Voir
+                    plus de formations</a>
+            </div>
+            </div>
+        </section>
+        <!-- AVIS CLIENTS -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="md:text-4xl mb-16 font-bold text-3xl text-center text-white tracking-widest drop-shadow-red uppercase"
+                title="Avis clients">Avis clients</h2>
+            <div
+                class="flex flex-col items-center text-center grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-5xl ">
+                <!-- avis 1 -->
+                <article class="bg-grey/65 p-8 border border-white/10">
+                    <img class="object-cover border-2 border-[#E50914] mb-4 shadow-red" src="./img/dustin.jpg"
+                        alt="Photo de Juliette">
+                    <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Juliette</h3>
+                    <div class="text-gray-400 mb-6 text-sm flex inline-flex" title="Icone étoile">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="relative italic text-gray-300 drop-shadow-red">J’ai trouvé le parcours très bien structuré
+                        : vidéos courtes, quizzes
+                        pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions.
+                        L’interface est claire et la progression est motivante — parfait pour se former en
+                        autonomie.</p>
+                </article>
+                <!-- avis 2 -->
+                <article class="bg-grey/65 p-8 border border-white/10">
+                    <img class="object-cover border-2 border-[#E50914] mb-4 shadow-red" src="./img/steve.jpg"
+                        alt="Photo de Camille">
+                    <h3 class="text-xl font-bold text-white mb-2 tracking-widest">Camille</h3>
+                    <div class="text-gray-400 mb-6 text-sm flex inline-flex" title="Icone étoile">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="relative italic text-gray-300 drop-shadow-red">
+                        Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le
+                        support et les
+                        corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Les avantages klivio -->
+        <section class="container relative px-4 py-24 z-10 mx-auto">
+            <div class="flex flex-col gap-16 justify-between items-center md:flex-row">
+                <div class="md:w-1/2 w-full space-y-8">
+                    <h2 class="titre-avantage" title="Les avantages Klivio">Les avantages Klivio</h2>
+                    <ul class="ul-avantage">
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-arrow-up-right.svg"
+                                alt="Icone de flèche qui pointe en haut à droite" title="Icone flèche">
+                            Suivi de sa progression
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-edit.svg" alt="Icone d'un stylo qui écrit"
+                                title="Icone stylo">
+                            Exercices et QCM pour la mise en pratique
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-download.svg" alt="Icone de téléchargement"
+                                title="Icone téléchargement">
+                            Possibilité de télécharger/imprimer les formations
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-star.svg" alt="Icone d'étoile"
+                                title="Icone d'étoile">
+                            Contenu qualitatif et vérifié
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-clock-backward.svg" alt="Icone d'horloge"
+                                title="Icone d'horloge">
+                            Suivi en autonomie, 24h/24, 7j/7
+                        </li>
+                        <li>
+                            <img class="iconAvantage" src="./images/icon-annotation-typing.svg" alt="Icone de tchat"
+                                title="Icone de tchat">
+                            Espaces d'échanges dédiés pour poser ses questions sur les formations
+                        </li>
+                    </ul>
+                </div>
+                <img class="img-avantage" src="./images/avantages.png"
+                    alt="Photo d'une femme derrière son pc qui sourit" title="Photo section avantage">
+            </div>
+        </section>
+        <!-- Créer vos formations avec Klivio -->
+        <section class="section-vosForm">
+            <div class="responsive">
+                <img id="imgBureau" src="./images/become-author.png"
+                    alt="Vue du dessus d'un bureau, on voit une personne écrire sur un cahier"
+                    title="Photo section créer vos formations">
+                <div class="vosFormContent">
+                    <h2 id="titre-vos-form">Créez vos formations avec Klivio</h2>
+                    <ul class="li-vos-form">
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-coin-hand.svg"
+                                alt="Icone de main qui tient de la monnaie" title="Icone de main avec pièce">
+                            Commission unique, au pourcentage sur les ventes
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-heart.svg" alt="Icone de coeur"
+                                title="Icone de coeur">
+                            Mise en avant sur la plateforme
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-pencil.svg" alt="Icone de stylo"
+                                title="Icone de crayon">
+                            Contrôle total sur le cours : contenu, prix
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-ecrou.svg" alt="Icone d'écrou"
+                                title="Icone d'écrou">
+                            Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices,
+                            vidéos,
+                            téléchargement en PDF, suivi des statistiques des ventes, gestion de codes promos,
+                            gestion
+                            de la facturation, etc
+                        </li>
+                        <li>
+                            <img class="iconVosForm" src="./images/icon-user-profile-square.svg" alt="Icone de profil">
+                            Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits
+                            d’auteur
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <!-- A PROPOS DE KLIVIO -->
+        <section class="section-a-propos">
+            <div class="responsive">
+                <div class="aProposContent">
+                    <h2 class="titre-a-propos" title="A propos de Klivio">À propos de Klivio</h2>
+                    <p class="pAPropos">Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre
+                        approche
+                        éducative.
+                        Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu,
+                        reconnaissant la qualité de leur travail.<br>
+                        Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité écessaire
+                        pour
+                        explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une
+                        clarté
+                        totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment
+                        le
+                        socle
+                        d'une ducation enrichissante et équitable, guidant notre mission d'offrir des
+                        pportunités
+                        d'apprentissage de qualité
+                    </p>
+                </div>
+                <div id="blueBlock" title="Image bloc bleu">
+                    <img id="logoAP" src=" ./images/logo.png" alt="Logo Klivio" title="Logo Klivio">
+                </div>
+            </div>
+        </section>
+        <!-- NOUS CONTACTER -->
+        <section class="section-contact">
+            <div class="responsive">
+                <div class="contactContent">
+                    <h2 id="titreContact" title="Nous contacter">Nous contacter</h2>
+                    <div id="barre-séparateur"></div>
+                    <form class="contactForm">
+                        <div id="form">
+                            <input class="contactUs" type="text" id="name" name="name" placeholder="Nom" title="Nom"
+                                required>
+                            <input class="contactUs" type="email" id="email" name="email" placeholder="Email"
+                                title="Email" required>
+                        </div>
+                        <textarea class="message" id="message" name="message" rows="4" title="Votre message"
+                            placeholder="Votre message" required></textarea>
+                        <input id="btnValider" type="submit" value="Envoyer" title="Bouton envoyer">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div id="bandeVerte"></div>
+        <div class="responsive">
+            <div class="footerContent">
+                <div class="footer">
+                    <div id="blockLogo">
+                        <img id="footerLogo" src="./images/logo.png" alt="Logo Klivio" title="Logo Klivio">
+                    </div>
+                    <div id="mentions">
+                        <h3 class="titreFooter" title="Mentions légales">Mentions légales</h3>
+                        <ul class="ulCopyright">
+                            <li><a href="#" title="CGU">CGU</a></li>
+                            <li><a href="#" title="CGV">CGV</a></li>
+                            <li><a href="#" title="FAQ">FAQ</a></li>
+                            <li><a href="#" title="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div id="coordonnees">
+                        <h3 class="titreFooter" title="Coordonnées">Coordonnées</h3>
+                        <ul class="ulCopyright">
+                            <li>
+                                <img class="iconCoordonnee" src="./images/icon-marker.svg" alt="Icone de localisation"
+                                    title="Icone localisation">
+                                1 place république,<br>
+                                75003 Paris
+                            </li>
+                            <li>
+                                <img class="iconCoordonnee" src="./images/icon-phone.svg"
+                                    alt="Icone d'un téléphone mobile" title="Icone téléphone">
+                                01.02.03.04.05
+                            </li>
+                            <li>
+                                <img title="Icone email" class="iconCoordonnee" src="./images/icon-mail.svg"
+                                    alt="Icone d'un email">
+                                contact@klivio.fr
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blockBtn">
+                        <a class="footerBtn btnConnexion" href="#" title="Bouton connexion">Connexion</a>
+                        <a class="footerBtn btnInscription" href="#" title="Bouton d'inscription">Inscription</a>
+                    </div>
+                </div>
+                <div id="barre-separateur-footer"></div>
+                <div class="footerTDR">
+                    <p class="copyright" title="© Klivio - 2025">© Klivio - 2025</p>
+                    <div class="blockFollow">
+                        <p id="followUs" title="Suivez - nous">Suivez - nous</p>
+                        <div class="iconFooter">
+                            <img title="Icone Facebook" class="iconSocial fb" src="./images/icon-fb.svg"
+                                alt="Icone Facebook">
+                            <img title="Icone X" class="iconSocial x" src="./images/icon-x.svg" alt="Icone Twitter">
+                            <img title="Icone Instagram" class="iconSocial insta" src="./images/icon-insta.svg"
+                                alt="Icone Instagram">
+                            <img title="Icone LinkedIn" class="iconSocial in" src="./images/icon-in.svg"
+                                alt="Icone LinkedIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Structuring_content/Structuring_documents -->
+
+</html>
