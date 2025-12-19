@@ -77,20 +77,10 @@
                 <!-- BOUTON A DROITE -->
                 <div class="flex items-center gap-4">
                     <a href="#" class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red
-                    " title="Bouton connexion">
-                        Connexion</a>
-                    <a href="#" class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red">
-                        Inscription</a>
+                    " title="Bouton connexion">Connexion</a>
+                    <a href="#"
+                        class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red">Inscription</a>
                 </div>
-                <!-- <div class="flex items-center gap-4">
-                    <a href="#"
-                        class="hidden md:block inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase"
-                        title="Bouton connexion">
-                        Connexion</a>
-                    <a href="#"
-                        class="hidden md:block inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase">
-                        Inscription</a>
-                </div> -->
             </div>
         </nav>
     </header>
@@ -101,9 +91,8 @@
 
         <!-- Partie du haut avec H1 -->
         <section
-            class="flex flex-col justify-center items-center text-center h-[80vh] px-4 overflow-hidden bg-black relative">
-            <img class="opacity-60 w-full h-full object-cover absolute inset-0" src="./img/bg-hero.jpg"
-                alt="Photo de la bannière, enfant en vélo">
+            class="bg-[url('./img/bg-hero.jpg')] bg-center bg-blend-overlay bg-cover bg-no-repeat bg-black/60 flex flex-col justify-center items-center text-center h-[80vh] px-4 overflow-hidden bg-black relative">
+            <!-- <img class="opacity-60 w-full h-full object-cover absolute inset-0" src="./img/bg-hero.jpg" -->
             <div class="flex flex-col items-center relative z-10">
                 <h1
                     class="md:text-7xl lg:text-8xl text-5xl font-bold text-red uppercase tracking-widest mb-6 drop-shadow-red animate-pulse">
@@ -132,9 +121,8 @@
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
                         <!-- bloc au dessus equivalent vert -->
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/micro.jpg" alt="Photo d'un micro"
-                                title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-cover bg-zinc-800 bg-[url('./img/micro.jpg')]"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
@@ -161,9 +149,8 @@
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
                         <!-- bloc au dessus equivalent vert -->
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/cassette.jpg" alt="Photo d'un micro"
-                                title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-zinc-800 bg-cover bg-[url('./img/cassette.jpg')]"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
@@ -172,15 +159,14 @@
 
                         <div class="p-6">
                             <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Gérer le
-                                stress
-                            </h3>
+                                stress</h3>
                             <p class="italic mb-4 text-gray-400 text-sm">Lucie Garnier | Formatrice</p>
                             <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
                                 <i class="star fa-solid fa-star"></i>
                                 <i class="star fa-solid fa-star"></i>
                                 <i class="star fa-solid fa-star"></i>
                                 <i class="star fa-solid fa-star"></i>
-                                <i class="no-star fa-solid fa-star"></i>
+                                <i class="no-star fa-solid fa-star opacity-50"></i>
                             </div>
 
                             <p class="text-sm text-gray-300">Apprenez à rester serein face aux défis</p>
@@ -189,9 +175,8 @@
                     <!-- 3 FORMA -->
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/talkiewalkie.jpg"
-                                alt="Photo d'un talkie walkie" title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-cover bg-zinc-800 bg-[url('./img/talkiewalkie.jpg')]"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
@@ -215,9 +200,8 @@
                     <!-- 4 FORMA -->
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/time.jpg" alt="Photo d'un sablier"
-                                title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-zinc-800 bg-[url('./img/time.jpg')] bg-cover"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
@@ -234,7 +218,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star opacity-50"></i>
 
                             </div>
 
@@ -257,20 +241,19 @@
                     <!-- 1ere formation -->
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/time.jpg" alt="Photo d'un sablier"
-                                title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-zinc-800 bg-[url('./img/time.jpg')] bg-center bg-cover"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
                             <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
                         </div>
 
-                        <div class="p-6">
+                        <div class="p-6" title="Icone étoile">
                             <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Mieux
                                 communiquer</h3>
                             <p class="italic mb-4 text-gray-400 text-sm">Julien Martel | Coach en comm.</p>
-                            <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                            <div class="flex text-yellow-500 text-xs gap-1 mb-4">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -285,20 +268,19 @@
                     <!-- 2ème formation -->
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/time.jpg" alt="Photo d'un sablier"
-                                title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-zinc-800 bg-[url('./img/time.jpg')] bg-center bg-cover"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
                             <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
                         </div>
 
-                        <div class="p-6">
-                            <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Maîtriser
-                                ses émotions</h3>
-                            <p class="italic mb-4 text-gray-400 text-sm">Amel Benali | Psy.du travail</p>
-                            <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                        <div class="p-6" title="Icone étoile">
+                            <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Maîtriser ses
+                                émotions</h3>
+                            <p class="italic mb-4 text-gray-400 text-sm">Amel Benali | Psy. du travail</p>
+                            <div class="flex text-yellow-500 text-xs gap-1 mb-4">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -313,109 +295,106 @@
                     <!-- 3ème formation -->
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/time.jpg" alt="Photo d'un sablier"
-                                title="Photo micro"></div>
+                        <div
+                            class="h-48 relative w-full bg-center bg-zinc-800 bg-[url('./img/time.jpg')] bg-center bg-cover">
+                        </div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
                             <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
                         </div>
 
-                        <div class="p-6">
-                            <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Résoudre
-                                les problèmes</h3>
+                        <div class="p-6" title="Icone étoile">
+                            <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Résoudre les
+                                problèmes</h3>
                             <p class="italic mb-4 text-gray-400 text-sm">Thomas Rivière | Expert</p>
-                            <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                            <div class="flex text-yellow-500 text-xs gap-1 mb-4">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <!-- warning revoir etoile manquante -->
+                                <i class="fa-solid fa-star opacity-50"></i>
                             </div>
-
                             <p class="text-sm text-gray-300">Analysez, décidez et trouvez des solutions durables</p>
                         </div>
                     </article>
                     <!-- 4ème formation -->
                     <article
                         class="bg-black overflow-hidden border border-white/10 rounded-xl hover:border-red hover:shadow-red relative">
-                        <div class="h-48 relative w-full bg-center bg-zinc-800 " title="Image"><img
-                                class="object-cover w-full h-full" src="./img/time.jpg" alt="Photo d'un sablier"
-                                title="Photo micro"></div>
+                        <div class="h-48 relative w-full bg-center bg-zinc-800 bg-[url('./img/time.jpg')] bg-center bg-cover"
+                            title="Image"></div>
                         <div
                             class="absolute bg-black/90 border border-red px-3 py-1 rounded shadow-lg flex items-center gap-2 top-4 right-4">
                             <span class="font-bold text-white" title="15,99 €">15,99 €</span>
                             <span class="text-xs line-through text-gray-500" title="60 € barré">60 €</span>
                         </div>
 
-                        <div class="p-6">
+                        <div class="p-6" title="Icone étoile">
                             <h3 class="font-stranger mb-2 text-white text-xl font-bold transition-colors">Leadership
                                 positif</h3>
                             <p class="italic mb-4 text-gray-400 text-sm">Marc Nguyen | Consultant</p>
-                            <div class="flex text-yellow-500 text-xs gap-1 mb-4" title="Icone étoile">
+                            <div class="flex text-yellow-500 text-xs gap-1 mb-4">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-
+                                <i class="fa-solid fa-star opacity-50"></i>
                             </div>
-
                             <p class="text-sm text-gray-300">Inspirez, motivez et fédérez votre équipe</p>
                         </div>
                     </article>
                 </div>
                 <div class="text-center">
                     <a class="inline-block px-10 py-4 bg-white text-black font-bold tracking-widest uppercase "
-                        href="#">Voir
-                        plus de formations</a>
+                        href="#">Voir plus de formations</a>
                 </div>
             </div>
         </section>
         <!-- AVIS CLIENTS -->
-        <section class="container mx-auto px-4 py-16">
-            <h2 class="md:text-4xl mb-16 font-bold text-3xl text-center text-white tracking-widest drop-shadow-red uppercase"
-                title="Avis clients">Avis clients</h2>
-            <div
-                class="flex flex-col items-center text-center grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-5xl ">
-                <!-- avis 1 -->
-                <article class="bg-grey/65 p-8 border border-white/10">
-                    <img class="object-cover border-2 border-[#E50914] mb-4 shadow-red" src="./img/juliette.jpg"
-                        alt="Photo de Juliette">
-                    <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Juliette</h3>
-                    <div class="text-gray-400 mb-6 text-sm flex inline-flex" title="Icone étoile">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="relative italic text-gray-300 drop-shadow-red">J’ai trouvé le parcours très bien structuré
-                        : vidéos courtes, quizzes
-                        pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions.
-                        L’interface est claire et la progression est motivante — parfait pour se former en
-                        autonomie.</p>
-                </article>
-                <!-- avis 2 -->
-                <article class="bg-grey/65 p-8 border border-white/10">
-                    <img class="object-cover border-2 border-[#E50914] mb-4 shadow-red" src="./img/camilleboy.jpg"
-                        alt="Photo de Camille">
-                    <h3 class="text-xl font-bold text-white mb-2 tracking-widest">Camille</h3>
-                    <div class="text-gray-400 mb-6 text-sm flex inline-flex" title="Icone étoile">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="relative italic text-gray-300 drop-shadow-red">
-                        Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le
-                        support et les
-                        corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
-                    </p>
-                </article>
+        <section class="px-4 py-16">
+            <div class="container mx-auto">
+                <h2 class="md:text-4xl mb-16 font-bold text-3xl text-center text-white tracking-widest drop-shadow-red uppercase"
+                    title="Avis clients">Avis clients</h2>
+                <div
+                    class="flex flex-col items-center text-center grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-5xl ">
+                    <!-- avis 1 -->
+                    <article class="bg-grey/65 p-8 border border-white/10">
+                        <img class="object-cover border-2 border-[#E50914] mb-4 shadow-red" src="./img/juliette.jpg"
+                            alt="Photo de Juliette">
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Juliette</h3>
+                        <div class="text-gray-400 mb-6 text-sm flex-inline" title="Icone étoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="relative italic text-gray-300 drop-shadow-red">J’ai trouvé le parcours très bien
+                            structuré
+                            : vidéos courtes, quizzes
+                            pertinents et projets pratiques qui m’ont permis d’appliquer immédiatement les notions.
+                            L’interface est claire et la progression est motivante — parfait pour se former en
+                            autonomie.</p>
+                    </article>
+                    <!-- avis 2 -->
+                    <article class="bg-grey/65 p-8 border border-white/10">
+                        <img class="object-cover border-2 border-[#E50914] mb-4 shadow-red" src="./img/camilleboy.jpg"
+                            alt="Photo de Camille">
+                        <h3 class="text-xl font-bold text-white mb-2 tracking-widest">Camille</h3>
+                        <div class="text-gray-400 mb-6 text-sm flex-inline" title="Icone étoile">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="relative italic text-gray-300 drop-shadow-red">
+                            Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le
+                            support et les
+                            corrections automatiques ont vraiment aidé. Idéal pour démarrer et progresser rapidement.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
         <!-- Les avantages klivio -->
@@ -429,8 +408,6 @@
                             <img class="object-contain drop-shadow-red w-8 h-8" src="./img/icon-arrow-up-right.svg"
                                 alt="Icone de flèche qui pointe en haut à droite" title="Icone flèche">
                             Suivi de sa progression
-                            <!-- warning voir pour mettre span html-->
-                            <!-- <span class="text-xl text-gray-300 group-hover:text-white transition-colors">Suivi de sa progression</span> -->
                         </li>
                         <li class="flex items-center hover:translate-x-2 gap-5 ">
                             <img class="object-contain drop-shadow-red w-8 h-8" src="./img/icon-edit.svg"
@@ -620,14 +597,17 @@
                     </div>
                 </div>
                 <div class="w-full bg-white/10 h-px" id="barre-separateur-footer"></div>
-                <div class="flex flex-col justify-between items-center md:flex-row gap-4 text-sm font-stranger text-gray-500">
+                <div
+                    class="flex flex-col justify-between items-center md:flex-row gap-4 text-sm font-stranger text-gray-500">
                     <p class="copyright" title="© Klivio - 2025">© Klivio - 2025</p>
                     <div class="flex items-center gap-6">
-                        <p class="font-bold  tracking-widest text-gray-400 uppercase animate-pulse" id="followUs" title="Suivez - nous">Suivez - nous</p>
+                        <p class="font-bold  tracking-widest text-gray-400 uppercase animate-pulse" id="followUs"
+                            title="Suivez - nous">Suivez - nous</p>
                         <div class="flex gap-4">
                             <img title="Icone Facebook" class="h-6 w-6 hover:scale-110" src="./img/icon-fb.svg"
                                 alt="Icone Facebook">
-                            <img title="Icone X" class="h-6 w-6 hover:scale-110" src="./img/icon-x.svg" alt="Icone Twitter">
+                            <img title="Icone X" class="h-6 w-6 hover:scale-110" src="./img/icon-x.svg"
+                                alt="Icone Twitter">
                             <img title="Icone Instagram" class="h-6 w-6 hover:scale-110" src="./img/icon-insta.svg"
                                 alt="Icone Instagram">
                             <img title="Icone LinkedIn" class="h-6 w-6 hover:scale-110" src="./img/icon-in.svg"
