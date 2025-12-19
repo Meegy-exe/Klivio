@@ -27,7 +27,7 @@
                         'red': '0 0 10px rgba(229, 9, 20, 0.6)',
                         'white': '0 0 20px rgba(255, 255, 255, 0.3)',
                         'black': '0 10px 20px rgba(0, 0, 0, 0.8)',
-                        'test' : '0 0 30px rgba(229, 9, 20, 0, 3)',
+                        'test': '0 0 30px rgba(229, 9, 20, 0, 3)',
                     },
                     dropShadow: {
                         'red': '0 0 10px rgba(229, 9, 20, 0.6)',
@@ -76,6 +76,13 @@
                 </div>
                 <!-- BOUTON A DROITE -->
                 <div class="flex items-center gap-4">
+                    <a href="#" class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red
+                    " title="Bouton connexion">
+                        Connexion</a>
+                    <a href="#" class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red">
+                        Inscription</a>
+                </div>
+                <!-- <div class="flex items-center gap-4">
                     <a href="#"
                         class="hidden md:block inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase"
                         title="Bouton connexion">
@@ -83,7 +90,7 @@
                     <a href="#"
                         class="hidden md:block inline-block px-10 py-4 bg-white text-black font-bold tracking-widest  uppercase">
                         Inscription</a>
-                </div>
+                </div> -->
             </div>
         </nav>
     </header>
@@ -526,88 +533,104 @@
                         d'apprentissage de qualité
                     </p>
                 </div>
-                <div id="blueBlock" class="bg-[#141414] shadow-white flex justify-center w-full border-2 border-red rounded-xl hover:scale-105 md:w-1/2" title="Fond noir">
-                    <img id="logoAP" class="object-contain drop-shadow-red max-w-xs w-full h-auto" src="./img/autre-logo/logoKlivio.jpg" alt="Logo Klivio" title="Logo Klivio">
+                <div id="blueBlock"
+                    class="bg-[#141414] shadow-white flex justify-center w-full border-2 border-red rounded-xl hover:scale-105 md:w-1/2"
+                    title="Fond noir">
+                    <img id="logoAP" class="object-contain drop-shadow-red max-w-xs w-full h-auto"
+                        src="./img/autre-logo/logoKlivio.jpg" alt="Logo Klivio" title="Logo Klivio">
                 </div>
             </div>
         </section>
         <!-- NOUS CONTACTER -->
-        <section class="relative z-10 bg-black border-t border-white py-24" >
+        <section class="relative z-10 bg-black border-t border-white py-24">
             <div class="container px-4 mx-auto">
                 <div class="text-center max-w-4xl mx-auto">
-                    <h2 class="font-stranger font-bold text-3xl text-red md:text-5xl tracking-widest drop-shadow-red animate-pulse mb-8 uppercase" id="titreContact" title="Nous contacter">Nous contacter</h2>
-                    <div id="barre-séparateur" class="bg-[#E50914] rounded shadow-[0_0_10px_#E50914] w-24 h-1 mx-auto mb-12"></div>
+                    <h2 class="font-stranger font-bold text-3xl text-red md:text-5xl tracking-widest drop-shadow-red animate-pulse mb-8 uppercase"
+                        id="titreContact" title="Nous contacter">Nous contacter</h2>
+                    <div id="barre-séparateur"
+                        class="bg-[#E50914] rounded shadow-[0_0_10px_#E50914] w-24 h-1 mx-auto mb-12"></div>
                     <form class="space-y-6">
-                        <div id="form">
-                            <input class="contactUs" type="text" id="name" name="name" placeholder="Nom" title="Nom"
-                                required>
-                            <input class="contactUs" type="email" id="email" name="email" placeholder="Email"
-                                title="Email" required>
+                        <div id="form" class="grid grid-cols-1 grid md:grid-cols-2 gap-6">
+                            <input
+                                class="text-white border border-white/20 shadow-white rounded w-full bg-[#141414] p-4 placeholder-gray-500 "
+                                type="text" id="name" name="name" placeholder="Nom" title="Nom" required>
+                            <input
+                                class="shadow-white text-white border border-white/20 rounded w-full bg-[#141414] p-4 placeholder-gray-500"
+                                type="email" id="email" name="email" placeholder="Email" title="Email" required>
                         </div>
-                        <textarea class="message" id="message" name="message" rows="4" title="Votre message"
-                            placeholder="Votre message" required></textarea>
-                        <input id="btnValider" type="submit" value="Envoyer" title="Bouton envoyer">
+                        <textarea
+                            class="text-white border border-white/20 shadow-white rounded w-full bg-[#141414] p-4 placeholder-gray-500 "
+                            id="message" name="message" rows="4" title="Votre message" placeholder="Votre message"
+                            required></textarea>
+                        <input id="btnValider"
+                            class="inline-block text-white font-bold font-stranger py-3 px-10 bg-[#E50914] tracking-widest rounded shadow-[0_0_15px_rgba(229, 9, 20, 0.5)] hover:scale-105 hover:bg-red-700  uppercase"
+                            type="submit" value="Envoyer" title="Bouton envoyer">
                     </form>
                 </div>
             </div>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer>
-        <div id="bandeVerte"></div>
-        <div class="responsive">
-            <div class="footerContent">
-                <div class="footer">
-                    <div id="blockLogo">
-                        <img id="footerLogo" src="./images/logo.png" alt="Logo Klivio" title="Logo Klivio">
+    <footer class="relative z-10 border-t border-white/10 bg-black text-gray-300">
+        <div id="bandeVerte" class="w-full h-1 bg-[#E50914] shadow-[0_0_20px_rgba(229, 9, 20, 0.6)]"></div>
+        <div class="container px-4 py-12 mx-auto">
+            <div class="flex flex-col gap-12">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-4 md:grid-cols-2">
+                    <div id="blockLogo" class="flex items-start">
+                        <img class="h-auto drop-shadow-red shadow-white rounded-xl hover:scale-105 w-40" id="footerLogo"
+                            src="./img/logonav.jpg" alt="Logo Klivio" title="Logo Klivio">
                     </div>
                     <div id="mentions">
-                        <h3 class="titreFooter" title="Mentions légales">Mentions légales</h3>
-                        <ul class="ulCopyright">
-                            <li><a href="#" title="CGU">CGU</a></li>
-                            <li><a href="#" title="CGV">CGV</a></li>
-                            <li><a href="#" title="FAQ">FAQ</a></li>
-                            <li><a href="#" title="Contact">Contact</a></li>
+                        <h3 class="font-stranger text-white font-bold tracking-widest mb-6 text-lg uppercase"
+                            title="Mentions légales">Mentions légales</h3>
+                        <ul class="space-y-3">
+                            <li><a class="hover:text-red" href="#" title="CGU">CGU</a></li>
+                            <li><a class="hover:text-red" href="#" title="CGV">CGV</a></li>
+                            <li><a class="hover:text-red" href="#" title="FAQ">FAQ</a></li>
+                            <li><a class="hover:text-red" href="#" title="Contact">Contact</a></li>
                         </ul>
                     </div>
                     <div id="coordonnees">
-                        <h3 class="titreFooter" title="Coordonnées">Coordonnées</h3>
-                        <ul class="ulCopyright">
-                            <li>
-                                <img class="iconCoordonnee" src="./images/icon-marker.svg" alt="Icone de localisation"
+                        <h3 class="font-stranger text-white font-bold tracking-widest mb-6 text-lg uppercase"
+                            title="Coordonnées">Coordonnées</h3>
+                        <ul class="space-y-">
+                            <li class="flex items-start gap-3">
+                                <img class="h-5 w-5 mt-1" src="./img/icon-marker.svg" alt="Icone de localisation"
                                     title="Icone localisation">
                                 1 place république,<br>
                                 75003 Paris
                             </li>
-                            <li>
-                                <img class="iconCoordonnee" src="./images/icon-phone.svg"
-                                    alt="Icone d'un téléphone mobile" title="Icone téléphone">
+                            <li class="flex items-start gap-3">
+                                <img class="h-5 w-5 mt-1" src="./img/icon-phone.svg" alt="Icone d'un téléphone mobile"
+                                    title="Icone téléphone">
                                 01.02.03.04.05
                             </li>
-                            <li>
-                                <img title="Icone email" class="iconCoordonnee" src="./images/icon-mail.svg"
+                            <li class="flex items-start gap-3">
+                                <img title="Icone email" class="h-5 w-5 mt-1" src="./img/icon-mail.svg"
                                     alt="Icone d'un email">
                                 contact@klivio.fr
                             </li>
                         </ul>
                     </div>
-                    <div class="blockBtn">
-                        <a class="footerBtn btnConnexion" href="#" title="Bouton connexion">Connexion</a>
-                        <a class="footerBtn btnInscription" href="#" title="Bouton d'inscription">Inscription</a>
+                    <div class="flex flex-col items-start gap-4">
+                        <a class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red"
+                            href="#" title="Bouton connexion">Connexion</a>
+                        <a class="font-bold font-stranger px-6 text-black py-2 bg-white text-center w-full border border-white/30 tracking-widest rounded hover:bg-red hover:text-white uppercase hover:shadow-white shadow-red"
+                            href="#" title="Bouton d'inscription">Inscription</a>
                     </div>
                 </div>
-                <div id="barre-separateur-footer"></div>
-                <div class="footerTDR">
+                <div class="w-full bg-white/10 h-px" id="barre-separateur-footer"></div>
+                <div class="flex flex-col justify-between items-center md:flex-row gap-4 text-sm font-stranger text-gray-500">
                     <p class="copyright" title="© Klivio - 2025">© Klivio - 2025</p>
-                    <div class="blockFollow">
-                        <p id="followUs" title="Suivez - nous">Suivez - nous</p>
-                        <div class="iconFooter">
-                            <img title="Icone Facebook" class="iconSocial fb" src="./images/icon-fb.svg"
+                    <div class="flex items-center gap-6">
+                        <p class="font-bold  tracking-widest text-gray-400 uppercase animate-pulse" id="followUs" title="Suivez - nous">Suivez - nous</p>
+                        <div class="flex gap-4">
+                            <img title="Icone Facebook" class="h-6 w-6 hover:scale-110" src="./img/icon-fb.svg"
                                 alt="Icone Facebook">
-                            <img title="Icone X" class="iconSocial x" src="./images/icon-x.svg" alt="Icone Twitter">
-                            <img title="Icone Instagram" class="iconSocial insta" src="./images/icon-insta.svg"
+                            <img title="Icone X" class="h-6 w-6 hover:scale-110" src="./img/icon-x.svg" alt="Icone Twitter">
+                            <img title="Icone Instagram" class="h-6 w-6 hover:scale-110" src="./img/icon-insta.svg"
                                 alt="Icone Instagram">
-                            <img title="Icone LinkedIn" class="iconSocial in" src="./images/icon-in.svg"
+                            <img title="Icone LinkedIn" class="h-6 w-6 hover:scale-110" src="./img/icon-in.svg"
                                 alt="Icone LinkedIn">
                         </div>
                     </div>
